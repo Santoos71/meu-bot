@@ -4,3 +4,4 @@ pwinput
 tabulate
 python-dotenv
 flask
+gunicorn
