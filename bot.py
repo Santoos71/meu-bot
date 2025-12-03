@@ -5,10 +5,21 @@ import time
 import json
 import csv
 import os
+from flask import Flask
 from dotenv import load_dotenv
 load_dotenv()
 from tabulate import tabulate
 from datetime import datetime, timedelta
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Bot está rodando!"
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
 
 class WebScraper:
     """
