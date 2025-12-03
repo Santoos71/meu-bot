@@ -3,3 +3,4 @@ pyTelegramBotAPI
 pwinput
 tabulate
 python-dotenv
+flask
